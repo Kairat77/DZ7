@@ -34,16 +34,16 @@ class WorkerTwo{
         this.#rate = rate;
         this.#days = days;
     }
-    getOne(){
+    getName(){
         return this.#name;
     }
-    getTwo(){
+    getSurname(){
         return this.#surname
     }
-    getThree(){
+    getRate(){
         return this.#rate
     }
-    getFour(){
+    getDays(){
         return this.#days
     }
     getSalary(rate, days) {
@@ -51,10 +51,15 @@ class WorkerTwo{
         return zarplata;
     }
 }
+function myFunc(a,b){
+    return a+b
+}
 
 const result = new WorkerTwo ('Kairat', 'Tom', 20, 54);
-console.log(result.getOne());
-console.log(result.getTwo());
-console.log(result.getThree());
-console.log(result.getFour());
+console.log(result.getName());
+console.log(result.getSurname());
+console.log(result.getRate());
+console.log(result.getDays());
 console.log(result.getSalary());
+
+
